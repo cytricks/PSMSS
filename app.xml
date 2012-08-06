@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application project_name="SpaceShooter" version="1.00" runtime_version="0.99" default_locale="en-US">
+  <name />
+  <short_name />
+  <parental_control lock_level="3" />
+  <rating_list highest_age_limit="3" has_online_features="false">
+    <online_features chat="false" personal_info="false" user_location="false" exchange_content="false" />
+    <rating type="ESRB" value="3" age="3" code="" />
+    <rating type="PEGIEX" value="3" age="3" code="" />
+  </rating_list>
+  <images icon_128x128="icon2.png" icon_256x256="icon1.png" icon_512x512="icon.png" />
+  <genre_list>
+    <genre value="Games:Shooter" />
+    <genre value="Games:Arcade" />
+  </genre_list>
+  <developer>
+    <name value="Ishmeal Hosein" /> 
+  </developer>
+  <website href="" />
+  <copyright author="" />
+  <purchase>
+    <product_list />
+  </purchase>
+  <runtime_config>
+    <memory managed_heap_size="32768" resource_heap_size="65536" />
+  </runtime_config>
+  <feature_list>
+    <feature value="GamePad" />
+  </feature_list>
+</application>

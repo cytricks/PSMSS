@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D99D7824-AB36-4917-9E80-8DD898B413D3}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SpaceShooter</RootNamespace>
+    <AssemblyName>SpaceShooter</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.PlayStation.Core" />
+    <Reference Include="Sce.PlayStation.HighLevel.GameEngine2D" />
+    <Reference Include="Sce.PlayStation.HighLevel.UI" />
+    <Reference Include="Mono.Debugger.Soft" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMain.cs" />
+    <Compile Include="PlayerClass.cs" />
+    <Compile Include="ShotClass.cs" />
+    <Compile Include="EnemyClass.cs" />
+    <Compile Include="SimpleEnemy.cs" />
+    <Compile Include="SimpleDead.cs" />
+    <Compile Include="SurvivalMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ShaderProgram Include="shaders\Simple.fcg" />
+    <ShaderProgram Include="shaders\Simple.vcg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PsmMetadata Include="app.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="textures\ss.png" />
+    <Content Include="textures\ball.png" />
+    <Content Include="textures\shots1.png" />
+    <Content Include="textures\spaceship.png" />
+    <Content Include="textures\spaceship1.png" />
+    <Content Include="textures\spaceship128.png" />
+    <Content Include="textures\tri.png" />
+    <Content Include="textures\Ship1.png" />
+    <Content Include="textures\ex0.png" />
+    <Content Include="textures\ex1.png" />
+    <Content Include="textures\ex2.png" />
+    <Content Include="textures\ex3.png" />
+    <Content Include="textures\ex4.png" />
+    <Content Include="textures\ex5.png" />
+    <Content Include="textures\ex6.png" />
+    <Content Include="textures\ex7.png" />
+    <Content Include="textures\ex8.png" />
+    <Content Include="textures\ex9.png" />
+    <Content Include="textures\ex10.png" />
+    <Content Include="textures\ex11.png" />
+    <Content Include="textures\^.png" />
+    <Content Include="textures\bg.png" />
+    <Content Include="textures\bgw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="textures\" />
+  </ItemGroup>
+</Project>
